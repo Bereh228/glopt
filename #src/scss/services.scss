@@ -1,0 +1,114 @@
+.services{
+    min-height: 950px;
+    padding: 56px 0;
+
+
+    &__subtitle{
+        font-weight: 300;
+        font-size: 2.1rem;
+        color: $black;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #e9e9e9;
+    }
+    &__header{
+        width: 100%;
+        height: 60px;
+        background-color: $card-header;
+        line-height: 60px;
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__img{
+        width: 50px;
+        height: 50px;
+        margin: 13px auto;
+        img{
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+            
+        }
+    }
+    &__front{
+        min-height: 280px;
+        position: relative;
+        transition: .5s all;
+
+
+        &_none{
+            display: none;
+        }
+
+        &-title{
+            font-size: 1.4rem;
+            font-weight: 500;
+            color: $black;
+            text-transform: uppercase;
+        }
+        &-subtitle{
+            color: $main-color;
+            font-weight: 500;
+            font-size: 2.8rem;
+            margin-bottom: 16px;
+        }
+        &-descr{
+            font-weight: 300;
+            font-size: 1.4rem;
+            color: $black;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+    }
+    &__back{
+        display: none;
+        min-height: 280px;
+        position: relative;
+        transition: .5s all;
+        
+        &_visiable{
+            display: flex;
+        }
+    }
+
+    &__list{
+        list-style-type: none;
+        text-align-last: left;
+        &-item{
+            font-weight: 300;
+            color: $black;
+            font-size: 1.5rem;
+            margin-top: 7px;
+            line-height: 1.3;
+            position: relative;
+            &:before{
+                content: '';
+                display: block;
+                width: 10px;
+                height: 10px;
+                border: 2px solid $main-color;
+                background-color: transparent;
+                border-radius: 50%;
+                position: absolute;
+                left: -13px;
+                top: 3px;
+            }
+        }
+    }
+    &__consultation{
+        font-size: 2.8rem;
+        font-weight: 500;
+        color: $second;
+        margin-top: 55px;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
+}

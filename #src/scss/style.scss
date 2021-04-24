@@ -1,0 +1,63 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+    @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+    }
+}
+@import 'vars';
+@import 'fonts';
+@import 'button';
+
+
+@import 'header';
+@import 'promo';
+@import 'advantage';
+@import 'work';
+@import 'agent';
+@import 'services';
+@import 'consultation';
+@import 'meneger';
+@import 'scheme';
+@import 'response';
+@import 'ask';
+@import 'map';
+@import 'footer';
+
+
+html{
+    font-size: 62.5%;
+}
+div{
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+body{
+    font-family: Roboto, sans-serif;
+    font-size: 1.4rem;
+}
+
+.container{
+    width: 1150px;
+    position: relative;
+}
+
+h2.title{
+    text-align: center;
+    font-weight: 700;
+    color: $black;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.line{
+    margin: 0 auto;
+    width: 150px;
+    height: 2px;
+    background-color: $main-color;
+    margin-bottom: 15px;
+}

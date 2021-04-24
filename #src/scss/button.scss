@@ -1,0 +1,57 @@
+.button{
+    display: block;
+    background-color: $main-color;
+    font-size: 1.2rem;
+    color: $white;
+    border: none;
+    border-radius: 27px;
+    text-transform: uppercase;
+    transition: .5s all;
+    margin: 0 auto;
+    &:hover{
+        box-shadow: 2px 1px 10px $main-color;
+    }
+    &__promo{
+        width: 230px;
+        height: 55px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 40px auto 0 auto;
+    }
+    &__services{
+        width: 160px;
+        height: 45px;
+
+        position: absolute;
+        bottom: 10px;
+        left: calc(50% - 80px);
+        font-weight: 700;
+        letter-spacing: 0.3px;
+        &_back{
+            width: 160px;
+            height: 45px;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 10px;
+            left: calc(50% - 80px);
+            font-weight: 700;
+            letter-spacing: 0.3px;
+        }
+    }
+    &__consultation{
+        width: 180px;
+        height: 45px;
+
+    }
+    &__ask{
+        width: 180px;
+        height: 41px;
+
+    }
+    &__footer{
+        width: 165px;
+        height: 41px;
+        margin-left: 15px;
+    }
+    
+}
