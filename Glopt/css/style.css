@@ -1172,7 +1172,7 @@ h2.title {
   }
 
   .header__items {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 
   .header__link-telle {
@@ -1182,6 +1182,7 @@ h2.title {
   .button__header {
     width: 130px;
     font-size: 1.15rem;
+    margin: 0;
   }
 
   .promo__header {
@@ -1246,6 +1247,126 @@ h2.title {
        object-fit: contain;
   }
 }
+
+@media (max-width: 1199px) {
+  .header__items {
+    font-size: 1.5rem;
+    padding: 9px;
+  }
+
+  .slick-prev {
+    left: 370px;
+  }
+
+  .slick-next {
+    right: 370px;
+  }
+
+  .response__descr {
+    font-size: 1.7rem;
+  }
+
+  .footer__left-logo {
+    margin-right: 10px;
+  }
+
+  .footer__bottom {
+    font-size: 1.5rem;
+  }
+
+  .footer__bottom-right__text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .header__logo {
+    display: none;
+  }
+
+  .header__items {
+    padding: 0 3px 0;
+    font-size: 1.4rem;
+  }
+
+  .header__link-text {
+    font-size: 1.26rem;
+    margin-bottom: 2px;
+  }
+
+  .header__link-telle {
+    font-size: 1.2rem;
+  }
+
+  .button__header {
+    width: 113px;
+    border-radius: 23px;
+    font-size: 1rem;
+  }
+
+  .promo__header {
+    font-size: 4.5rem;
+    margin-top: 5px;
+  }
+
+  .promo__subheader {
+    font-size: 3rem;
+  }
+
+  .work__img {
+    width: auto;
+  }
+
+  .services__border {
+    margin-bottom: 20px;
+  }
+
+  .services__front-descr {
+    font-size: 1.65rem;
+  }
+
+  .services__list-item {
+    font-size: 1.65rem;
+  }
+
+  .response .title {
+    margin-bottom: 5px;
+  }
+
+  .response .slick-prev {
+    left: 250px;
+  }
+
+  .response .slick-next {
+    right: 250px;
+  }
+
+  .response__descr {
+    margin: 0 30px;
+  }
+
+  .footer__left-text {
+    font-size: 1.4rem;
+  }
+
+  .footer__link {
+    margin-right: 7px;
+  }
+
+  .footer__link-telle {
+    font-size: 1.4rem;
+  }
+
+  .footer .button__footer {
+    width: 120px;
+    font-size: 1.1rem;
+  }
+
+  .ask__header,
+  .ask__form {
+    width: 700px;
+  }
+}
 @supports (-webkit-appearance:none){
 .promo{background:url("../img/main_bg.webp") center center/cover no-repeat}
 .agent{background:url("../img/agent_bg.webp") center center/cover no-repeat}
@@ -1256,6 +1377,22 @@ h2.title {
 }
 
  @media (max-width: 1400px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1199px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 991px){
 
 @supports (-webkit-appearance:none){
 

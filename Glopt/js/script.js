@@ -23,8 +23,8 @@ $(document).ready(function(){
         settings: {
           arrows: false,
           centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 3
+          centerPadding: '150px',
+          slidesToShow: 1
         }
       },
       {

@@ -5,7 +5,7 @@
             height: 65px;
         }
         &__items{
-            font-size: 1.3rem;
+            font-size: 1.8rem;
         }
         &__link{
             &-telle{
@@ -16,6 +16,7 @@
     .button__header{
         width: 130px;
         font-size: 1.15rem;
+        margin: 0;
     }
     .promo{
         &__header{
@@ -76,4 +77,131 @@
         }
     }
  
+}
+
+@media (max-width: 1199px){
+    .header{
+        &__items{
+            font-size: 1.5rem;
+            padding: 9px;
+        }
+    }
+    .slick-prev{
+        left: 370px;
+    }
+    .slick-next{
+        right: 370px;
+    }
+    .response{
+        &__descr{
+            font-size: 1.7rem;
+        }
+    }
+    .footer{
+        &__left{
+            &-logo{
+                margin-right: 10px;
+            }
+        }
+        &__bottom{
+            font-size: 1.5rem;
+            &-right{
+                &__text{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .header{
+        &__logo{
+            display: none;
+        }
+        &__items{
+            padding: 0 3px 0;
+            font-size: 1.4rem;
+        }
+        &__link{
+            &-text{
+                font-size: 1.26rem;
+                margin-bottom: 2px;
+            }
+            &-telle{
+                font-size: 1.2rem;
+            }
+        }
+    }
+    .button__header{
+        width: 113px;
+        border-radius: 23px;
+        font-size: 1rem;
+    }
+    .promo{
+        &__header{
+            font-size: 4.5rem;
+            margin-top: 5px;
+        }
+        &__subheader{
+            font-size: 3rem;
+        }
+    }
+    .work{
+        &__img{
+            width: auto;
+        }
+    }
+    .services{
+        &__border{
+            margin-bottom: 20px;
+        }
+        &__front{
+            &-descr{
+                font-size: 1.65rem;
+            }
+        }
+        &__list{
+            &-item{
+                font-size: 1.65rem;
+            }
+        }
+    }
+    .response{
+        .title{
+            margin-bottom: 5px;
+        }
+        .slick-prev{
+            left: 250px;
+        }
+        .slick-next{
+            right: 250px;
+        }
+        &__descr{
+            margin: 0 30px;
+        }
+    }
+    .footer{
+        &__left{
+            &-text{
+                font-size: 1.4rem;
+            }
+        }
+        &__link{
+            margin-right: 7px;
+            &-telle{
+                font-size: 1.4rem;
+            }
+        }
+        .button__footer{
+            width: 120px;
+            font-size: 1.1rem;
+        }
+    }
+    .ask{
+        &__header,
+        &__form{
+            width: 700px;
+        }
+    }
 }
