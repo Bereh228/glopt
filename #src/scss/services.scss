@@ -14,6 +14,14 @@
         display: flex;
         flex-direction: column;
         border: 1px solid #e9e9e9;
+        &:hover .services__img{
+            animation-name: exitScale;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
+        &:hover .button__services{
+            transform: rotate(360deg);
+        }
     }
     &__header{
         width: 100%;

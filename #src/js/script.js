@@ -52,6 +52,8 @@ $(document).ready(function(){
   })
 
 
+
+
   function fadeOutElement(item){
     $(item).on('click',function(){
       $('.overlay').fadeOut('slow');
@@ -66,6 +68,19 @@ $('#hamburger').on('click',function(){
   $('.header').toggleClass('header_active');
 })
 
+// smooth scroll
+$(window).scroll(function(){
+    if($(this).scrollTop()> 1600){
+      $('.up').fadeIn();
+    }else{
+      $('.up').fadeOut();
+    }
+  });
 
+  $("a[href=#up]").click(function(){
+    const _href = $(this).attr("href");
+    $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
+    return false;
+});
 })
 

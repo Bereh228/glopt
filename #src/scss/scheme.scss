@@ -4,11 +4,15 @@
     background-color: #f3f3f3;
     &__wrapper{
         margin-bottom: 25px;
+        &:hover .scheme__img{
+            transform: rotate(360deg) scale(1.1);
+        }
     }
     &__img{
         width: 50px;
         height: 50px;
         margin: 0 auto 15px auto;
+        transition: .5s all;
         img{
             width: 100%;
             height: 100%;

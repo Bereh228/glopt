@@ -6,6 +6,11 @@
         display: flex;
         align-items: start;
         margin-bottom: 25px;
+        &:hover .advantage__img{
+            animation-name: exitScale;
+            animation-iteration-count: infinite;
+            animation-duration: 1s;
+        }
     }
     &__left{
         margin-right: 20px;
