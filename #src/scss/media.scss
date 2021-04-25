@@ -427,5 +427,21 @@
             }
         }
     }
-    
+    .promo{
+        &__wrapper{
+            margin-bottom: 10px;
+        }
+    }
+    .overlay{
+        .modal{
+            &__call{
+                width: 300px;
+                left: calc(50% - 150px);
+                
+                h2.title{
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
 }

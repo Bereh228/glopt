@@ -145,12 +145,12 @@
 .header__items {
   text-decoration: none;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   -webkit-transition: .5s all;
   -o-transition: .5s all;
   transition: .5s all;
   font-weight: 300;
-  padding: 0 15px;
+  padding: 0 11px;
   border-right: 1px dashed gray;
 }
 
@@ -1660,6 +1660,19 @@ h2.title {
   }
 
   .footer__bottom-rule {
+    margin-bottom: 5px;
+  }
+
+  .promo__wrapper {
+    margin-bottom: 10px;
+  }
+
+  .overlay .modal__call {
+    width: 300px;
+    left: calc(50% - 150px);
+  }
+
+  .overlay .modal__call h2.title {
     margin-bottom: 5px;
   }
 }
