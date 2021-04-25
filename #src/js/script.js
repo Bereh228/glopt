@@ -22,8 +22,8 @@ $(document).ready(function(){
         breakpoint: 768,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '150px',
+          centerMode: false,
+          centerPadding: '0px',
           slidesToShow: 1
         }
       },
@@ -31,8 +31,8 @@ $(document).ready(function(){
         breakpoint: 480,
         settings: {
           arrows: false,
-          centerMode: true,
-          centerPadding: '40px',
+          centerMode: false,
+          centerPadding: '0px',
           slidesToShow: 1
         }
       }
@@ -41,10 +41,14 @@ $(document).ready(function(){
 
   $('#button__header').on('click',function(){
     $('.overlay, #modal__call').fadeIn();
+    $('.hamburger').removeClass('hamburger_active');
+    $('.header').removeClass('header_active');
   })
 
   $('.button__footer').on('click',function(){
     $('.overlay, #modal__call').fadeIn();
+    $('.hamburger').removeClass('hamburger_active');
+    $('.header').removeClass('header_active');
   })
 
 
@@ -57,6 +61,11 @@ $(document).ready(function(){
   fadeOutElement('.modal__call-exit');
   fadeOutElement('.modal__application-exit');
   
+$('#hamburger').on('click',function(){
+  $(this).toggleClass('hamburger_active');
+  $('.header').toggleClass('header_active');
+})
+
 
 })
 

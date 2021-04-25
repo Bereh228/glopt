@@ -41,6 +41,8 @@ div{
 body{
     font-family: Roboto, sans-serif;
     font-size: 1.4rem;
+    overflow-x: hidden;
+    position: relative;
 }
 
 .container{
@@ -62,4 +64,8 @@ h2.title{
     height: 2px;
     background-color: $main-color;
     margin-bottom: 15px;
+}
+
+.hamburger{
+    display: none;
 }

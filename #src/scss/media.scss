@@ -205,3 +205,227 @@
         }
     }
 }
+
+@media (max-width: 767px){
+    .header{
+        background-color: rgba($color: #3b3d4a, $alpha: .9);
+        width: 280px;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        border: 2px solid $main-color;
+        border-radius: 15px;
+        z-index: 50;
+        transition: .5s all;
+        transform: translateX(-150%);
+        &_active{
+            transform: translateX(0);
+        }
+        &__wrapper{
+            flex-direction: column;
+            justify-content: start;
+            align-items: flex-start;
+        }
+        &__item{
+            display: flex;
+            flex-direction: column;
+        }
+        &__items{
+            border: none;
+            padding: 5px 5px 5px 0;
+            font-size: 2rem;
+        }
+        &__link{
+            margin-top: 10px;
+            &-text{
+                text-align: left;
+                font-size: 2rem;
+            }
+            &-telle{
+                font-size: 2rem;
+            }
+        }
+        .button__header{
+            width: 160px;
+            margin-top: 5px;
+            font-size: 1.5rem;
+        }
+    }
+
+    .hamburger{
+        display: flex;
+        flex-direction: column;
+        width: 35px;
+        cursor: pointer;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        z-index: 70;
+        transition: .5s all;
+        &__item{
+            width: 100%;
+            height: 3px;
+            margin-bottom: 2px;
+            background-color: $main-color;
+            transition: .5s all;
+        }
+        &_active{
+            .hamburger__item:nth-child(1){
+                width: 57%;
+            }
+            .hamburger__item:nth-child(3){
+                width: 57%;
+                margin-left: 43%;
+            }
+        }
+    }
+    .promo{
+        &__underheader{
+            font-size: 2rem;
+        }
+        &__header{
+            font-size: 4.5rem;
+            line-height: 1.1;
+        }
+        &__subheader{
+            font-size: 2.27rem;
+        }
+        &__wrapper{
+            margin-bottom: 15px;
+        }
+        &__descr{
+            font-size: 1.7rem;
+        }
+        &__img{
+            margin-bottom: 1px;
+        }
+    }
+    .advantage{
+        &__left{
+            margin-right: 5px;
+        }
+        &__title{
+            margin-bottom: 3px;
+        }
+    }
+    .consultation{
+        &__wrapper{
+            flex-direction: column;
+            input{
+                margin: 5px;
+            }
+        }
+    }
+    .meneger{
+        &__title{
+            margin-bottom: 7px;
+        }
+        &__descr{
+            padding: 0 15px;
+        }
+    }
+    .footer{
+        &__left{
+            &-logo{
+                display: none;
+            }
+            &-text{
+                font-weight: 500;
+                font-size: 1.2rem;
+            }
+        }
+        &__link{
+            margin-right: -6px;
+            &-text{
+                font-size: 1.2rem;
+            }
+            &-telle{
+                font-size: 1rem;
+            }
+        }
+        .button__footer{
+            width: 110px;
+        }
+        &__bottom{
+            font-size: 1.3rem;
+        }
+    }
+    .ask{
+        &__header{
+            width: 500px;
+        } 
+        &__form{
+            width: 500px;
+            &-wrapper{
+                flex-direction: column;
+                input{
+                    width: 90%;
+                    margin: 0 auto 10px auto;
+                }
+            }
+            
+        } 
+        &__textarea{
+            width: 90%;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    .container{
+        width: auto;
+    }
+
+    .ask{
+        &__header,
+        &__form{
+            width: 300px;
+        }
+    }
+    .header{
+        width: 230px;
+    }
+    .footer{
+        &__top{
+            flex-direction: column;
+        }
+        &__right{
+            flex-direction: column;
+            align-items: center;
+            .button__footer{
+                margin: 0;
+                width: 180px;
+                font-size: 1.5rem;
+                margin-top: 5px;
+            }
+        }
+        &__left{
+            &-text{
+                font-size: 2rem;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        }
+        &__link{
+            &-text{
+                font-size: 1.6rem;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+            &-telle{
+                font-size: 1.8rem;
+            }
+        }
+        &__bottom{
+            flex-direction: column;
+            &-rule{
+                margin-bottom: 5px;
+            }
+        }
+    }
+    
+}
