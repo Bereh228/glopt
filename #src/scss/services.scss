@@ -41,7 +41,7 @@
         min-height: 280px;
         position: relative;
         transition: .5s all;
-
+        padding: 7px;
 
         &_none{
             display: none;
@@ -72,7 +72,7 @@
         min-height: 280px;
         position: relative;
         transition: .5s all;
-        
+        padding: 7px;
         &_visiable{
             display: flex;
         }

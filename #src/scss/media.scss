@@ -1,0 +1,79 @@
+@media (max-width: 1400px){
+    .header{
+        &__logo{
+            width: 65px;
+            height: 65px;
+        }
+        &__items{
+            font-size: 1.3rem;
+        }
+        &__link{
+            &-telle{
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .button__header{
+        width: 130px;
+        font-size: 1.15rem;
+    }
+    .promo{
+        &__header{
+            font-size: 6rem;
+        }
+        &__subheader{
+            font-size: 4rem;
+        }
+    }
+    .advantage{
+        &__wrapper{
+            align-items: start;
+        }
+        &__img{
+            width: 60px;
+            height: 60px;
+
+        }
+    }
+    .work{
+        &__subtitle{
+            line-height: 1.2;
+        }
+        &__img{
+            margin: 0 auto;
+        }
+        &__wrapper{
+            margin-bottom: 30px;
+        }
+        &__title-r{
+            margin: 8px 0 7px 0;
+            font-size: 2rem;
+        }
+        &__descr{
+            font-size: 1.6rem;
+        }
+    }
+    .services{
+        &__front{
+            &-descr{
+                font-size: 1.47rem;
+            }
+        }
+    }
+    .scheme{
+        margin-bottom: 5px;
+        &__title{
+            font-size: 1.9rem;
+            margin-bottom: 3px;
+        }
+        &__descr{
+            font-size: 1.7rem;
+        }
+        &__img{
+            img{
+                object-fit: contain;
+            }
+        }
+    }
+ 
+}

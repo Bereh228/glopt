@@ -1,30 +1,3 @@
-// $('.button__services').on('click',function(){
-//   $('.services__front').toggleClass('services__front_none');
-//   $('.services__back').toggleClass('services__back_visiable');
-// })
-
-// function toggleSlide(item){
-//   $(item).each(function(i){
-//     $(this).on('click',function(){
-//       $('.services__front').eq(i).toggleClass('services__front_none');
-//       $('.services__back').eq(i).toggleClass('services__back_visiable');
-//     })
-//   })
-// }
-
-// function previousSlide(item){
-//   $(item).each(function(i){
-//     $(this).on('click',function(){
-//       $('.services__back').eq(i).removeClass('services__back_visiable');
-//       $('.services__front').eq(i).removeClass('services__front_none');
-     
-//     })
-//   })
-// }
-
-// toggleSlide('.button__services');
-// previousSlide('.button__services_back');
-
 $(document).ready(function(){
   $('.button__services').each(function(i){
     $(this).on('click',function(){
@@ -65,6 +38,25 @@ $(document).ready(function(){
       }
     ]
   });
+
+  $('#button__header').on('click',function(){
+    $('.overlay, #modal__call').fadeIn();
+  })
+
+  $('.button__footer').on('click',function(){
+    $('.overlay, #modal__call').fadeIn();
+  })
+
+
+  function fadeOutElement(item){
+    $(item).on('click',function(){
+      $('.overlay').fadeOut('slow');
+    })
+  }
+
+  fadeOutElement('.modal__call-exit');
+  fadeOutElement('.modal__application-exit');
+  
 
 })
 
